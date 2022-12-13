@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link id="css" rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <title>MEMORY GAME</title>
+</head>
+
+<body>
+    <audio id="negative" src="sounds/negative.mp3">
+    </audio>
+    <audio id="whoos" src="sounds/quick-swhooshing-noise-80898.mp3">
+    </audio>
+    <audio id="right" src="sounds/right.mp3">
+    </audio>
+    <audio id="bonus" src="sounds/suprise.mp3">
+    </audio>
+    <audio id="win" src="sounds/tadaa-47995.mp3">
+    </audio>
+    <audio id="gameOver" src="sounds/gameOver.mp3">
+    </audio>
+    <div id="tusEngelle">
+    </div>
+    <div class="background">
+        <img id="background-img" src="assets/colors.jpg" alt="">
+        <div style="position: absolute;" id="endGame"></div>
+        <div id="background">
+            <header class="header">
+                <ul class="star-time">
+                    <li style="position: relative;right: 10rem;">
+                        <i class="star fa-sharp fa-solid fa-star"></i>
+                        <i class="star fa-sharp fa-solid fa-star"></i>
+                        <i class="star fa-sharp fa-solid fa-star"></i>
+                    </li>
+                    <li style=" position: relative; top: 2rem; left: 0.5rem; scale: 1.2;">
+                        <div style=" z-index: 999999;position: absolute; left: 8rem; margin-bottom: 5px;" id="saniye" class="saniye">120</div>
+                        <div style=" scale: 1.2;margin-bottom: 2rem; margin-right: 10px;width: 18rem; height: 18px;border-radius: 25px;border: 2px solid aliceblue; ">
+                            <div id="sayacColor" style=" height: 100%;width: 100%;border-radius: 25px;border: 2px solid aliceblue; background-color:aliceblue;  z-index:9999;"></div>
+                        </div>
+                        
+                    </li>
+                </ul>
+                <ul style="position: relative; left: 27rem  ;" class="btnDiv">
+                    <li>
+                        <div class="restart">
+                            <i class="fa-solid fa-arrow-rotate-right"></i>
+                            <input class="restart-btn" type="button" value="restart" onclick="document.location.reload(true);">                    
+                        </div>
+                    </li>
+                    <li>
+                        <strong id="bonusCounter" >3</strong>
+                        <button id="bonus" class="btn" type="button" onclick="flipAll()">BONUS</button>
+                    </li>
+                   
+                </ul>
+                
+            </header>
+    
+            <div class="main-container">
+            </div>
+        </div>
+
+    </div>
+    <script src="js/script.js"></script>
+    
+  
+    </script>
+</body>
+
+</html>
